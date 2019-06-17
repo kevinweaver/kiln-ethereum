@@ -5,8 +5,14 @@ import {
   ContractForm,
 } from "drizzle-react-components";
 
+// Toast component
+import { ToastContainer } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css'
+
 export default ({ accounts }) => (
   <div className="App">
+    <ToastContainer />
+
     <div>
       <h1>Kiln</h1>
       <h3>User Dashboard</h3>
