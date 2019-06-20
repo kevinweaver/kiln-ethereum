@@ -11,15 +11,15 @@ contract ComplexStorage {
     string public string3 = "lets string something";
 
     mapping (address => uint) uints1;
-    mapping (address => DeviceData) structs1;
+    mapping (address => PlayerData) structs1;
 
     uint[] public uintarray;
-    DeviceData[] public deviceDataArray;
-    DeviceData public singleDD;
+    PlayerData[] public playerDataArray;
+    PlayerData public singlePD;
 
-    struct DeviceData {
-        string deviceBrand;
-        string deviceYear;
+    struct PlayerData {
+        string playerBrand;
+        string playerYear;
         string batteryWearLevel;
     }
 
@@ -30,14 +30,14 @@ contract ComplexStorage {
         uints1[address1] = 88;
         uints1[address2] = 99;
 
-        structs1[address1] = DeviceData("deviceBrand", "deviceYear", "wearLevel");
-        structs1[address2] = DeviceData("deviceBrand2", "deviceYear2", "wearLevel2");
-        singleDD = DeviceData("deviceBrand3", "deviceYear3", "wearLevel3");
+        structs1[address1] = PlayerData("playerBrand", "playerYear", "wearLevel");
+        structs1[address2] = PlayerData("playerBrand2", "playerYear2", "wearLevel2");
+        singlePD = PlayerData("playerBrand3", "playerYear3", "wearLevel3");
 
         uintarray.push(8000);
         uintarray.push(9000);
 
-        deviceDataArray.push(structs1[address1]);
-        deviceDataArray.push(structs1[address2]);
+        playerDataArray.push(structs1[address1]);
+        playerDataArray.push(structs1[address2]);
     }
 }

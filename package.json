@@ -21,6 +21,8 @@
   },
   "homepage": "https://github.com/truffle-box/drizzle-box#readme",
   "dependencies": {
+    "@drizzle-utils/core": "^0.3.0-alpha.0",
+    "@drizzle-utils/get-web3": "^0.2.1",
     "openzeppelin-solidity": "^2.1.1",
     "react-toastify": "^5.2.1"
   }

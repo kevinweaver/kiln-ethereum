@@ -67,7 +67,7 @@ export default ({ accounts }) => (
       <p>
         Finally this contract shows data types with additional considerations.
         Note in the code the strings below are converted from bytes to UTF-8
-        strings and the device data struct is iterated as a list.
+        strings and the player data struct is iterated as a list.
       </p>
       <p>
         <strong>String 1: </strong>
@@ -77,8 +77,8 @@ export default ({ accounts }) => (
         <strong>String 2: </strong>
         <ContractData contract="ComplexStorage" method="string2" toUtf8 />
       </p>
-      <strong>Single Device Data: </strong>
-      <ContractData contract="ComplexStorage" method="singleDD" />
+      <strong>Single Player Data: </strong>
+      <ContractData contract="ComplexStorage" method="singlePD" />
     </div>
   </div>
 );
